@@ -10,44 +10,129 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  width: 50%;
-  height: 70%;
+  width: 95%;
+  height: 90%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(255, 255, 255);
+}
+
+.errMsg {
+  margin-top: 10px;
+  color: #ff0000;
 }
 
 h1 {
   font-size: 2.3rem;
 }
 
-.weather input {
+.weather {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #eeebeb;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin: 70px;
+  gap: 10px;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.searchBar input[type="text"] {
+  width: 100px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #444;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  background-color: transparent;
+}
+
+.weatherInfo {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.weatherInfo img {
   width: 200px;
-  height: 10px;
-  padding: 10px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
+  height: 200px;
 }
 
-.weather input::placeholder {
-  font-size: 1rem;
+.temperatureContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.weather button {
-  width: 60px;
-  height: 35px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
+#temperature {
+  font-size: 6rem;
+  color: #5c5c5c;
+}
+
+#feels{
+  font-size: 1.5rem;
+  color: #a5a5a5;
+}
+
+.container-temperature {
+  font-size: 2rem;
+  margin: 16px;
+  color: darkgray;
+}
+
+.container-toggle-buttons {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.toggle-button {
+  color: #cacaca;
+  padding: 4px 8px;
   cursor: pointer;
+}
+
+.unit-enabled {
+  font-weight: 900;
+  width: 30px;
+  padding: 3px;
+  text-align: center;
+  color: rgb(75, 74, 74);
+  cursor: default;
+}
+
+.right-border-none {
+  border-right: none;
+}
+
+.left-border {
+  border-left: 1px solid #ffffff;
 }
