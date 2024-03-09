@@ -7,12 +7,39 @@
     <title>Weather</title>
   </head>
   <body>
-    <div class="container">
+    <header>
       <h1>Weather App</h1>
+    </header>
+    <div class="container">
       <div class="weather">
-        <input type="text" name="location" id="location" placeholder="Search Places" />
-        <button id="searchBtn">Search</button>
-        <div class="weather-info"></div>
+        <div class="searchBar">
+          <h4>Right now in </h4>
+          <input
+            type="text"
+            name="location"
+            id="location"
+          />
+          <h4> , <span id="cloud">Clear</span>.</h4>
+        </div>
+        <div class="errMsg"></div>
+        <div class="weatherInfo">
+          <div class="condition">
+              <img id="weatherIcon" src="" alt="" />
+            </span>
+          </div>
+          <div class="temperatureContainer">
+            <span id="temperature"> </span>
+            <span id="feels"></span>
+          </div>
+        </div>
+        <div class="container-toggle-buttons">
+          <span
+            id="celsius-button"
+            class="toggle-button right-border-none unit-enabled"
+          >
+            °C </span
+          ><span id="fahrenheit-button" class="toggle-button left-border"
+            >°F</span
       </div>
     </div>
 
