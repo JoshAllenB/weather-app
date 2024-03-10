@@ -42,7 +42,7 @@ async function currentWeather() {
     }
 
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=c3451ffeb2ae4f15b6761756240803&q=${search}&days=3`,
+      `https://api.weatherapi.com/v1/forecast.json?key=c3451ffeb2ae4f15b6761756240803&q=${search}&days=3`,
       { mode: "cors" }
     );
     const data = await response.json();
