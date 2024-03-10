@@ -13,23 +13,39 @@
     <div class="container">
       <div class="weather">
         <div class="searchBar">
-          <h4>Right now in </h4>
-          <input
-            type="text"
-            name="location"
-            id="location"
-          />
-          <h4> , <span id="cloud">Clear</span>.</h4>
+          <h4>Right now in</h4>
+          <input type="text" name="location" id="location" autocomplete="off" />
+          <h4>, <span id="condition">Clear</span>.</h4>
         </div>
         <div class="errMsg"></div>
-        <div class="weatherInfo">
-          <div class="condition">
-              <img id="weatherIcon" src="" alt="" />
-            </span>
+        <div class="currentWeather">
+          <div class="iconContainer">
+            <span class="icon"> </span>
+            <div class="temperatureContainer">
+              <span id="temperature"> </span>
+              <span id="feels"></span>
+            </div>
           </div>
-          <div class="temperatureContainer">
-            <span id="temperature"> </span>
-            <span id="feels"></span>
+          <div class="sideInfo">
+            <span id="wind"> </span>
+            <span id="humidity"> </span>
+            <span id="uv"> </span>
+          </div>
+        </div>
+        <div class="forecast">
+          <div class="secondWeather">
+            <span class="secondDate"></span>
+            <div class="secondWeatherIcon">
+              <span id="secondIcon"> </span>
+            </div>
+            <span id="secondTemp"></span>
+          </div>
+          <div class="thirdWeather">
+            <span class="thirdDate"></span>
+            <div class="thirdWeatherIcon">
+              <span id="thirdIcon"></span>
+            </div>
+            <span id="thirdTemp"></span>
           </div>
         </div>
         <div class="container-toggle-buttons">
@@ -37,12 +53,14 @@
             id="celsius-button"
             class="toggle-button right-border-none unit-enabled"
           >
-            °C </span
-          ><span id="fahrenheit-button" class="toggle-button left-border"
-            >°F</span
+            °C
+          </span>
+          <span id="fahrenheit-button" class="toggle-button left-border">
+            °F
+          </span>
+        </div>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
